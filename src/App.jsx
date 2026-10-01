@@ -83,15 +83,14 @@ export default function App() {
 } 
 
 function Main() {
-  const [movies, setMovies] = useState(tempMovieData);
-  const [watched, setWatched] = useState(tempWatchedData);
-  const [isOpen1, setIsOpen1] = useState(true);
-  const [isOpen2, setIsOpen2] = useState(true);
+    const [movies, setMovies] = useState(tempMovieData);
+    const [watched, setWatched] = useState(tempWatchedData);
+    const [isOpen1, setIsOpen1] = useState(true);
+    const [isOpen2, setIsOpen2] = useState(true);
 
-  const avgImdbRating = average(watched.map((movie) => movie.imdbRating));
-  const avgUserRating = average(watched.map((movie) => movie.userRating));
-  const avgRuntime = average(watched.map((movie) => movie.runtime));
-  
+    const avgImdbRating = average(watched.map((movie) => movie.imdbRating));
+    const avgUserRating = average(watched.map((movie) => movie.userRating));
+    const avgRuntime = average(watched.map((movie) => movie.runtime));
   return (
     <main className="main">
       <div className="box">
